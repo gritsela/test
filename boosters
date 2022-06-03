@@ -1,0 +1,140 @@
+2022-06-03 14:46:04.376 17504-17504/? E/CASS: Failed to connect(4)
+2022-06-03 14:46:04.376 17504-17504/? E/CASS: Failed to connect ril daemon(2). Retry cnt(2)
+2022-06-03 14:46:04.689 2764-2764/? E/ViewRootImpl@7972d36[PopupWindow:334cd5b]: mStopped=false mHasWindowFocus=true mPausedForTransition=false
+2022-06-03 14:46:04.693 2764-2764/? E/ViewRootImpl: sendUserActionEvent() returned.
+2022-06-03 14:46:04.892 1347-1458/? E/WindowManager: win=Window{5af99b1 u0 PopupWindow:334cd5b EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.WindowState.destroySurface:3840 com.android.server.wm.AppWindowToken.destroySurfaces:896 com.android.server.wm.AppWindowToken.destroySurfaces:877 com.android.server.wm.WindowState.onExitAnimationDone:5496 com.android.server.wm.WindowStateAnimator.onAnimationFinished:320 com.android.server.wm.WindowState.onAnimationFinished:5920 com.android.server.wm.-$$Lambda$yVRF8YoeNdTa8GR1wDStVsHu8xM.run:2 
+2022-06-03 14:46:05.379 17504-17504/? E/CASS: Failed to connect(4)
+2022-06-03 14:46:05.379 17504-17504/? E/CASS: Failed to connect ril daemon(2). Retry cnt(4)
+2022-06-03 14:46:06.078 2764-2764/? E/ProActiveLaunch: Sending Broadcast
+2022-06-03 14:46:06.083 1347-1651/? E/ActivityManager: TouchDown intent received, starting ActiveLaunch
+2022-06-03 14:46:06.168 1347-2064/? E/ANDR-PERF-JNI: com_qualcomm_qtiperformance_native_perf_io_prefetch_start
+2022-06-03 14:46:06.168 791-791/? E/ANDR-IOP: IOP HAL: Received pkg_name = com.veraxen.blockblast pid = -1
+2022-06-03 14:46:06.170 2304-2304/? E/pageboostd: Received HALT command code 2
+2022-06-03 14:46:06.170 791-824/? E/ANDR-IOP: io prefetch is disabled
+2022-06-03 14:46:06.205 974-1491/? E/NativeSemDvfsCpuManager: release:: Start
+2022-06-03 14:46:06.205 974-1491/? E/SemOpenPerfStorageManager: release:: Start
+2022-06-03 14:46:06.205 974-1491/? E/SemOpenPerfStorageManager: release:: DVFS lock is already released. Previous lock will be acquire first.
+2022-06-03 14:46:06.217 710-732/? E/Netd: getNetworkForDns: getNetId from enterpriseCtrl is netid 0
+2022-06-03 14:46:06.241 819-2019/? E/Parcel: Reading a NULL string not supported here.
+2022-06-03 14:46:06.244 819-2019/? E/Parcel: Reading a NULL string not supported here.
+2022-06-03 14:46:06.247 22210-17527/? E/GBJv1Daemon: No values read
+2022-06-03 14:46:06.380 17504-17504/? E/CASS: Failed to connect(4)
+2022-06-03 14:46:06.380 17504-17504/? E/CASS: Failed to connect ril daemon(2). Retry cnt(6)
+2022-06-03 14:46:06.422 22210-17538/? E/IPM: Cannot map charging source to plugType: chgSrc = 0x13
+2022-06-03 14:46:06.431 16737-16737/? E/043123.988/main:: [SCOPE CREATED: MAIN_ACTIVITY_48692639]
+2022-06-03 14:46:06.445 16737-16737/? E/AndroidRuntime: FATAL EXCEPTION: main
+    Process: com.veraxen.blockblast, PID: 16737
+    java.lang.RuntimeException: Unable to start activity ComponentInfo{com.veraxen.blockblast/com.veraxen.blockblast.presentation.main_activity.MainActivity}: java.lang.IllegalStateException: The scope with name ROOT_FirstLaunchScope has been already closed. It can't be used to create new instances.
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3160)
+        at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3303)
+        at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+        at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+        at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+        at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1991)
+        at android.os.Handler.dispatchMessage(Handler.java:106)
+        at android.os.Looper.loop(Looper.java:216)
+        at android.app.ActivityThread.main(ActivityThread.java:7258)
+        at java.lang.reflect.Method.invoke(Native Method)
+        at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:494)
+        at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:975)
+     Caused by: java.lang.IllegalStateException: The scope with name ROOT_FirstLaunchScope has been already closed. It can't be used to create new instances.
+        at toothpick.ScopeImpl.crashIfClosed(SourceFile:3)
+        at toothpick.ScopeImpl.getInstance(SourceFile:2)
+        at toothpick.ScopeImpl.getInstance(SourceFile:1)
+        at com.veraxen.first_launch.di.toothpick.FirstLaunchModuleKt$installFirstLaunchModule$4.invoke$lambda-0(Unknown Source:2)
+        at com.veraxen.first_launch.di.toothpick.FirstLaunchModuleKt$installFirstLaunchModule$4.if(Unknown Source:0)
+        at com.veraxen.first_launch.di.toothpick.goto.get(Unknown Source:2)
+        at toothpick.InternalProvider.get(SourceFile:7)
+        at toothpick.InternalScopedProvider.get(Unknown Source:2)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+        at toothpick.ScopeImpl.getInstance(SourceFile:1)
+        at com.veraxen.blockblast.domain.interactor.StartupInteractor__Factory.createInstance(SourceFile:5)
+        at com.veraxen.blockblast.domain.interactor.StartupInteractor__Factory.createInstance(SourceFile:1)
+        at toothpick.InternalProvider.get(SourceFile:19)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+        at toothpick.ScopeImpl.getInstance(SourceFile:1)
+        at toothpick.ScopeImpl.lambda$installInternalProviderCyclic$0(Unknown Source:4)
+        at toothpick.ScopeImpl.if(Unknown Source:0)
+        at ss0.get(Unknown Source:4)
+        at toothpick.InternalProvider.get(SourceFile:5)
+        at toothpick.InternalScopedProvider.get(Unknown Source:2)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+        at toothpick.ScopeImpl.getInstance(SourceFile:1)
+        at com.veraxen.blockblast.domain.interactor.main_activity.MainActivityInteractor__Factory.createInstance(SourceFile:6)
+        at com.veraxen.blockblast.domain.interactor.main_activity.MainActivityInteractor__Factory.createInstance(SourceFile:1)
+        at toothpick.InternalProvider.get(SourceFile:19)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+        at toothpick.ScopeImpl.getInstance(SourceFile:1)
+        at toothpick.ScopeImpl.lambda$installInternalProviderCyclic$0(Unknown Source:4)
+        at toothpick.ScopeImpl.if(Unknown Source:0)
+        at ss0.get(Unknown Source:4)
+        at toothpick.InternalProvider.get(SourceFile:5)
+        at toothpick.InternalScopedProvider.get(Unknown Source:2)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+        at toothpick.ScopeImpl.getInstance(SourceFile:1)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityViewModelFactoryModule$MainActivityViewModelInteractorProvider__Factory.createInstance(SourceFile:3)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityViewModelFactoryModule$MainActivityViewModelInteractorProvider__Factory.createInstance(SourceFile:1)
+        at toothpick.InternalProvider.get(SourceFile:30)
+        at toothpick.InternalScopedProvider.get(Unknown Source:2)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+2022-06-03 14:46:06.446 16737-16737/? E/AndroidRuntime:     at toothpick.ScopeImpl.getInstance(SourceFile:1)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityViewModel__Factory.createInstance(SourceFile:3)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityViewModel__Factory.createInstance(SourceFile:1)
+        at toothpick.InternalProvider.get(SourceFile:19)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+        at toothpick.ScopeImpl.getInstance(SourceFile:1)
+        at toothpick.ScopeImpl.lambda$installInternalProviderCyclic$0(Unknown Source:4)
+        at toothpick.ScopeImpl.if(Unknown Source:0)
+        at ss0.get(Unknown Source:4)
+        at toothpick.InternalProvider.get(SourceFile:5)
+        at toothpick.InternalScopedProvider.get(Unknown Source:2)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityViewModelFactoryModule$MainActivityViewModelFactoryProvider.withSavedState(SourceFile:6)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityViewModelFactoryModule$MainActivityViewModelFactoryProvider$get$factory$1.create(Unknown Source:14)
+        at androidx.lifecycle.AbstractSavedStateViewModelFactory.create(SourceFile:2)
+        at androidx.lifecycle.ViewModelProvider.get(SourceFile:9)
+        at androidx.lifecycle.ViewModelProvider.get(SourceFile:2)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityViewModelFactoryModule$MainActivityViewModelFactoryProvider.get(SourceFile:3)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityViewModelFactoryModule$MainActivityViewModelFactoryProvider.get(SourceFile:1)
+        at toothpick.InternalProvider.get(SourceFile:36)
+        at toothpick.InternalScopedProvider.get(Unknown Source:2)
+        at toothpick.ScopeImpl.getInstance(SourceFile:4)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivityAssemblyKt.installViewModel(SourceFile:6)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivity.preInstallModules(SourceFile:28)
+        at com.veraxen.core_ui.base.activity.BaseActivity$onCreate$5.invoke(SourceFile:5)
+        at com.veraxen.core_ui.base.activity.BaseActivity$onCreate$5.invoke(SourceFile:1)
+        at com.veraxen.blockblast.di.toothpick.scope.ScopeProviderImpl.getScope(SourceFile:21)
+        at com.veraxen.blockblast.di.toothpick.scope.ScopeProviderImpl.open(Unknown Source:0)
+        at com.veraxen.core.base.controller.ScopeProvider.open(Unknown Source:5)
+        at com.veraxen.core.base.controller.IScopeProvider$DefaultImpls.open$default(Unknown Source:18)
+        at com.veraxen.core_ui.base.activity.BaseActivity.onCreate(SourceFile:10)
+        at com.veraxen.blockblast.presentation.main_activity.MainActivity.onCreate(SourceFile:3)
+        at android.app.Activity.performCreate(Activity.java:7353)
+        at android.app.Activity.performCreate(Activity.java:7344)
+        at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1275)
+        at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:3140)
+        	... 11 more
+2022-06-03 14:46:06.447 16737-16737/? E/axen.blockblas: No package ID ff found for ID 0xffffffff.
+2022-06-03 14:46:06.447 16737-16737/? E/axen.blockblas: No package ID ff found for ID 0xffffffff.
+2022-06-03 14:46:06.806 1347-1688/? E/WindowManager: win=Window{893e513 u0 com.sec.android.app.launcher/com.sec.android.app.launcher.activities.LauncherActivity} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=false win.mRemoveOnExit=false win.mViewVisibility=8 caller=com.android.server.wm.WindowManagerService.tryStartExitingAnimation:2769 com.android.server.wm.WindowManagerService.relayoutWindow:2466 com.android.server.wm.Session.relayoutForTranslate:308 android.view.IWindowSession$Stub.onTransact:518 com.android.server.wm.Session.onTransact:192 android.os.Binder.execTransact:739 <bottom of call stack> 
+2022-06-03 14:46:07.381 17504-17504/? E/CASS: Failed to connect(4)
+2022-06-03 14:46:07.382 17504-17504/? E/CASS: Failed to connect ril daemon(2). Retry cnt(8)
+2022-06-03 14:46:07.422 22210-17538/? E/IPM: Cannot map charging source to plugType: chgSrc = 0x13
+2022-06-03 14:46:07.648 819-898/? E/Parcel: Reading a NULL string not supported here.
+2022-06-03 14:46:07.651 22210-17527/? E/GBJv1Daemon: No values read
+2022-06-03 14:46:07.669 1347-1535/? E/WindowManager: win=Window{cc82239 u0 Splash Screen com.veraxen.blockblast EXITING} destroySurfaces: appStopped=false win.mWindowRemovalAllowed=true win.mRemoveOnExit=true win.mViewVisibility=0 caller=com.android.server.wm.AppWindowToken.destroySurfaces:896 com.android.server.wm.AppWindowToken.destroySurfaces:877 com.android.server.wm.WindowState.onExitAnimationDone:5496 com.android.server.wm.-$$Lambda$01bPtngJg5AqEoOWfW3rWfV7MH4.accept:2 java.util.ArrayList.forEach:1262 com.android.server.wm.AppWindowToken.onAnimationFinished:2479 com.android.server.wm.AppWindowToken.setVisibility:560 
+2022-06-03 14:46:07.698 819-901/? E/NativeSemDvfsGpuManager: acquire:: Start
+2022-06-03 14:46:07.698 819-901/? E/NativeSemDvfsGpuManager: acquire:: timeout = 1000 mIsAcquired = 0  mTagName : SurfaceFlinger 
+2022-06-03 14:46:07.706 819-901/? E/NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::requestGPU() 
+2022-06-03 14:46:07.706 819-901/? E/NativeSemDvfsGpuManager: acquire:: End
+2022-06-03 14:46:08.045 17564-17564/? E/Zygote: isWhitelistProcess - Process is Whitelisted
+2022-06-03 14:46:08.046 17564-17564/? E/Zygote: accessInfo : 1
+2022-06-03 14:46:08.055 17564-17564/? E/axen.blockblas: Not starting debugger since process cannot load the jdwp agent.
+2022-06-03 14:46:08.383 17504-17504/? E/CASS: Failed to connect(4)
+2022-06-03 14:46:08.383 17504-17504/? E/CASS: Failed to connect ril daemon(2). Retry cnt(10)
+2022-06-03 14:46:08.707 819-2729/? E/NativeSemDvfsGpuManager: release:: Start
+2022-06-03 14:46:08.708 819-2729/? E/NativeSemDvfsGpuManager: release():: mIsAcquired = 1 , mName = GPU  , mTagName : SurfaceFlinger 
+2022-06-03 14:46:08.721 819-2729/? E/NativeCustomFrequencyManager: [NativeCFMS] BpCustomFrequencyManager::releaseGPU() 
+2022-06-03 14:46:08.721 819-2729/? E/NativeSemDvfsGpuManager: release:: End
+2022-06-03 14:46:09.385 17504-17504/? E/CASS: Failed to connect(4)
+2022-06-03 14:46:09.385 17504-17504/? E/CASS: Failed to connect ril daemon(2). Retry cnt(12)
